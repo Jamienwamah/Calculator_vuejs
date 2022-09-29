@@ -1,22 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-link to="/CalcDev"></router-link>
+  <CalcDev/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CalcDev from './components/CalcDev.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CalcDev
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
