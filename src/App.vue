@@ -1,17 +1,17 @@
 <template>
   <router-link to="/CalcDev"></router-link>
-  <CalcDev/>
+  <CalcDev />
 </template>
 
 <script>
-import CalcDev from './components/CalcDev.vue'
+import CalcDev from "./components/CalcDev.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     CalcDev
   }
-}
+};
 </script>
 
 <style>
