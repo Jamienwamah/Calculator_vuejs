@@ -3,7 +3,7 @@
         <div class="display">{{current || '0'}}</div>
         <div @click="clear" class="btn">C</div>
         <div @click="sign" class="btn">+/-</div>
-        <div class="btn">%</div>
+        <div @click="percent" class="btn">%</div>
         <div class="btn operator">/</div>
         <div class="btn">7</div>
         <div class="btn">8</div>
@@ -28,7 +28,7 @@
 export default {
     data() {
         return {
-            current: '1234',
+            current: '600',
         }
         
     },
@@ -40,10 +40,15 @@ export default {
         },
         sign() {
             this.current = this.current.charAt(0) === '-'?
-              this.current.slice(1) : '-';
+              this.current.slice(1) : '-${this.current}';
+        },
+        percent () {
+            this.current = '${parseFloat(this.current) / 100}'
+        }
+        
+
         }
     }
-}
 </script>
 
 <style scoped>
