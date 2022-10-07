@@ -1,6 +1,7 @@
 <template>
-  <router-link to="/CalcDev"></router-link>
-  <CalcDev />
+  <div id="App">
+    <CalcDev />
+  </div>
 </template>
 
 <script>
